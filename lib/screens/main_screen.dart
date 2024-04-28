@@ -25,7 +25,7 @@ class MainScreen extends StatelessWidget {
     },
     {
       "time": "18:00",
-      "icon": CupertinoIcons.sun_max_fill,
+      "icon": CupertinoIcons.sun_min_fill,
       "temp": "31°",
       "isSelected": false
     },
