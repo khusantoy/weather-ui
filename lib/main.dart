@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_ui/screens/main_screen.dart';
 import 'package:weather_ui/screens/seven_days_screen.dart';
 
 void main() {
@@ -8,6 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SevenDaysScreen();
+    return MainScreen();
   }
 }

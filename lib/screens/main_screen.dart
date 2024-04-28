@@ -9,43 +9,50 @@ class MainScreen extends StatelessWidget {
       "time": "12:00",
       "icon": CupertinoIcons.cloud_fill,
       "temp": "Now",
-      "isSelected": true
+      "isSelected": true,
+      "isSun": false
     },
     {
       "time": "14:00",
       "icon": CupertinoIcons.cloud_rain_fill,
       "temp": "22°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": false
     },
     {
       "time": "16:00",
       "icon": CupertinoIcons.cloud_sun_fill,
       "temp": "26°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": false
     },
     {
       "time": "18:00",
       "icon": CupertinoIcons.sun_min_fill,
       "temp": "31°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": true
     },
     {
       "time": "20:00",
       "icon": CupertinoIcons.cloud_sun_fill,
       "temp": "25°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": false
     },
     {
       "time": "22:00",
       "icon": CupertinoIcons.cloud_fill,
       "temp": "20°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": false
     },
     {
       "time": "12:00",
       "icon": CupertinoIcons.cloud_fill,
       "temp": "23°",
-      "isSelected": false
+      "isSelected": false,
+      "isSun": false
     }
   ];
 
@@ -398,6 +405,7 @@ class MainScreen extends StatelessWidget {
                         icon: item['icon'],
                         temp: item['temp'],
                         isSelected: item['isSelected'],
+                        isSun: item['isSun']
                       )
                   ],
                 ),

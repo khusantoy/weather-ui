@@ -5,11 +5,14 @@ class WeatherItem extends StatelessWidget {
   IconData icon;
   String temp;
   bool isSelected;
-  WeatherItem(
-      {required this.time,
-      required this.icon,
-      required this.temp,
-      required this.isSelected});
+  bool isSun;
+  WeatherItem({
+    required this.time,
+    required this.icon,
+    required this.temp,
+    required this.isSelected,
+    required this.isSun,
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +43,11 @@ class WeatherItem extends StatelessWidget {
           Icon(
             icon,
             size: 30,
-            color: isSelected ? Colors.white : Colors.blue,
+            color: isSelected
+                ? Colors.white
+                : isSun
+                    ? Colors.amber.shade500
+                    : Colors.blue,
           ),
           const SizedBox(
             height: 10,
